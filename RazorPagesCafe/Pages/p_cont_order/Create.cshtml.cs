@@ -21,7 +21,7 @@ namespace RazorPagesCafe.Pages.p_cont_order
         public IActionResult OnGet()
         {
         ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
-        ViewData["IdPosition"] = new SelectList(_context.Dishes, "IdPosition", "Description");
+        ViewData["IdPosition"] = new SelectList(_context.Dishes, "IdPosition", "Name");
             return Page();
         }
 

@@ -7,10 +7,6 @@
 
 <h1>Блюда</h1>
 
-<p>
-    <a asp-page="Create">Создать</a>
-</p>
-
 <form asp-page="./Index" method="get">
     <div class="form-actions no-color">
         <p>
@@ -54,9 +50,8 @@
                     @Html.DisplayFor(modelItem => item.Amount)
                 </td>
                 <td>
-                    <a asp-page="./Edit" asp-route-id="@item.IdPosition">Редактировать</a> |
                     <a asp-page="./Details" asp-route-id="@item.IdPosition">Данные</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.IdPosition">Удалить</a>
+                    <a asp-page="/p_cont_order/Create">Добавить в корзину</a>
                 </td>
             </tr>
         }

@@ -15,9 +15,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ContentsOfOrder.IdPositionNavigation.Name" />
             <div class="form-group">
-                <label asp-for="ContentsOfOrder.IdPositionNavigation.Name" class="control-label">Название блюда</label>
-                <select asp-for="ContentsOfOrder.IdPositionNavigation.Name" class="form-control" asp-items="ViewBag.IdPosition"></select>
-                <span asp-validation-for="ContentsOfOrder.IdPositionNavigation.Name" class="text-danger"></span>
+                <label asp-for="ContentsOfOrder.IdPositionNavigation" class="control-label">Название блюда</label>
+                <select asp-for="ContentsOfOrder.IdPositionNavigation" class="form-control" asp-items="ViewBag.IdPosition"></select>
+                <span asp-validation-for="ContentsOfOrder.IdPositionNavigation" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ContentsOfOrder.Comment" class="control-label"></label>

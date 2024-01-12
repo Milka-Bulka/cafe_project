@@ -16,10 +16,13 @@ namespace RazorPagesCafe.Models
         [Display(Name = "Номер стола")]
         public int IdTable { get; set; }
 
-        [Display(Name = "Номер посетителя")]
+        [Display(Name = "Посетитель")]
         public int IdVisitor { get; set; }
 
-        [Display(Name = "Количество посетителей")]
+        [Display(Name = "Место заказа")]
+        public string PlaceOfOrder { get; set; }
+
+        [Display(Name = "Количество гостей")]
         public int NumberOfVisitor { get; set; }
 
         [DataType(DataType.Date)]
@@ -32,7 +35,7 @@ namespace RazorPagesCafe.Models
         [Display(Name = "Сумма заказа")]
         public decimal TotalAmount { get; set; }
 
-        [Display(Name = "Id ппосетителя")]
+        [Display(Name = "Id посетителя")]
         public virtual Visitor IdVisitorNavigation { get; set; }
 
         

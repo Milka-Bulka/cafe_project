@@ -5,19 +5,17 @@
     ViewData["Title"] = "Добавление";
 }
 
-<h1>Добавление</h1>
-
 <h4>Заказ</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="Orderr.IdOrder" class="control-label"></label>
                 <input asp-for="Orderr.IdOrder" class="form-control" />
                 <span asp-validation-for="Orderr.IdOrder" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="Orderr.IdVisitor" class="control-label"></label>
                 <select asp-for="Orderr.IdVisitor" class="form-control" asp-items="ViewBag.IdVisitor"></select>

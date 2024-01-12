@@ -30,6 +30,8 @@ namespace RazorPagesCafe.Pages.p_order
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+            Orderr.IdOrder = 15;
+
             if (!ModelState.IsValid)
             {
                 return Page();
