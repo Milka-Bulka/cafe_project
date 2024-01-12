@@ -1,0 +1,37 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_order.DetailsModel
+
+@{
+    ViewData["Title"] = "Данные";
+}
+
+<h1>Данные</h1>
+
+<div>
+    <h4>Корзина</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfOrder.IdOrderNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfOrder.IdOrderNavigation.IdOrder)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfOrder.Comment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfOrder.Comment)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfOrder.IdPositionNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfOrder.IdPositionNavigation.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ContentsOfOrder.IdOrder">Редактировать</a> |
+    <a asp-page="./Index">Вернуться</a>
+</div>

@@ -1,0 +1,60 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_order.IndexModel
+
+@{
+    ViewData["Title"] = "Список";
+}
+
+<h1>Список</h1>
+
+<p>
+    <a asp-page="Create">Создание нового заказа</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderr[0].IdTable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderr[0].NumberOfVisitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderr[0].OrderTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderr[0].TotalAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderr[0].IdVisitorNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Orderr) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfVisitor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdVisitorNavigation.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.IdOrder">Редактировать</a> |
+                <a asp-page="./Details" asp-route-id="@item.IdOrder">Данные</a> |
+                <a asp-page="./Delete" asp-route-id="@item.IdOrder">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

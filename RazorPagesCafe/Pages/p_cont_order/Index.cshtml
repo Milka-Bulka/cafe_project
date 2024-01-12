@@ -1,0 +1,46 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_order.IndexModel
+
+@{
+    ViewData["Title"] = "Список";
+}
+
+<h1>Корзина</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfOrder[0].IdOrderNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfOrder[0].Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfOrder[0].IdPositionNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ContentsOfOrder)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdOrderNavigation.IdOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPositionNavigation.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.IdOrder">Редактировать</a> |
+                <a asp-page="./Details" asp-route-id="@item.IdOrder">Подробнее</a> |
+                <a asp-page="./Delete" asp-route-id="@item.IdOrder">Удалить</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

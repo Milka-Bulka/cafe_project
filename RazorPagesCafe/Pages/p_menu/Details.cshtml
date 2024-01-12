@@ -1,0 +1,25 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_menu.DetailsModel
+
+@{
+    ViewData["Title"] = "Данные";
+}
+
+<h1>Данные</h1>
+
+<div>
+    <h4>Меню</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Menu.TimeOfAction)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Menu.TimeOfAction)
+        </dd>
+    </dl>
+</div>
+<div>
+    @*<a asp-page="./Edit" asp-route-id="@Model.Menu.MenuView">Редактировать</a> |*@
+    <a asp-page="./Index">Вернуться </a>
+</div>

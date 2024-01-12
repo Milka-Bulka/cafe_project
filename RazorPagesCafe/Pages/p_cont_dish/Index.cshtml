@@ -1,0 +1,48 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_dish.IndexModel
+
+@{
+    ViewData["Title"] = "Список";
+}
+
+<h1>Список</h1>
+
+<p>
+    <a asp-page="Create">Создание нового содержимого блюда</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfDish[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfDish[0].IdIngredientNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsOfDish[0].IdPositionNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ContentsOfDish) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdIngredientNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPositionNavigation.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_dish.EditModel
+
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+<h1>Редактирование</h1>
+
+<h4>Содержимое блюда</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ContentsOfDish.IdIngredient" />
+            <input type="hidden" asp-for="ContentsOfDish.IdPosition" />
+            <div class="form-group">
+                <label asp-for="ContentsOfDish.Quantity" class="control-label"></label>
+                <input asp-for="ContentsOfDish.Quantity" class="form-control" />
+                <span asp-validation-for="ContentsOfDish.Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Вернуться</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

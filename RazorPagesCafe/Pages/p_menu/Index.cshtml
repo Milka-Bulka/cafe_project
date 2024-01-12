@@ -1,0 +1,25 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_menu.IndexModel
+
+@{
+    ViewData["Title"] = "Меню";
+}
+
+<h1>Меню</h1>
+
+@*<p>
+    <a asp-page="Create">Добавление нового меню</a>
+</p>*@
+
+@foreach (var item in Model.Menu) 
+{
+<div class="well">
+    <h3>
+        <a asp-page="./Details" asp-route-id="@item.MenuView">@item.MenuView</a>
+    </h3>
+    @*<h3>
+            <a asp-page="./Edit" asp-route-id="@item.MenuView">Редактировать</a> |
+            <a asp-page="./Delete" asp-route-id="@item.MenuView">Удалить</a>
+    </h3>*@
+</div>
+}

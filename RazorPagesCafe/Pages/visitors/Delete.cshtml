@@ -1,0 +1,46 @@
+﻿@page
+@model RazorPagesCafe.Pages.visitors.DeleteModel
+
+@{
+    ViewData["Title"] = "Удаление";
+}
+
+<h1>Удаление</h1>
+
+<h3>Уверены, что хотите удалить посетителя?</h3>
+<div>
+    <h4>Посетитель</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Visitor.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Visitor.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Visitor.Telephone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Visitor.Telephone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Visitor.DOfB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Visitor.DOfB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Visitor.Bonuses)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Visitor.Bonuses)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Visitor.IdVisitor" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-page="./Index">Вернуться</a>
+    </form>
+</div>

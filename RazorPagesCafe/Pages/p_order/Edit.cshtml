@@ -1,0 +1,55 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_order.EditModel
+
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+<h1>Редактирование</h1>
+
+<h4>Заказ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Orderr.IdOrder" />
+            <div class="form-group">
+                <label asp-for="Orderr.IdTable" class="control-label"></label>
+                <input asp-for="Orderr.IdTable" class="form-control" />
+                <span asp-validation-for="Orderr.IdTable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orderr.IdVisitor" class="control-label"></label>
+                <select asp-for="Orderr.IdVisitor" class="form-control" asp-items="ViewBag.IdVisitor"></select>
+                <span asp-validation-for="Orderr.IdVisitor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orderr.NumberOfVisitor" class="control-label"></label>
+                <input asp-for="Orderr.NumberOfVisitor" class="form-control" />
+                <span asp-validation-for="Orderr.NumberOfVisitor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orderr.OrderTime" class="control-label"></label>
+                <input asp-for="Orderr.OrderTime" class="form-control" />
+                <span asp-validation-for="Orderr.OrderTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orderr.TotalAmount" class="control-label"></label>
+                <input asp-for="Orderr.TotalAmount" class="form-control" />
+                <span asp-validation-for="Orderr.TotalAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Вернуться</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

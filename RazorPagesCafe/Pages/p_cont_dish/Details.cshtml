@@ -1,0 +1,35 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_dish.DetailsModel
+
+    ViewData["Title"] = "Данные";
+}
+
+<h1>Данные</h1>
+<div>
+    <h4>Содержимое блюда</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.IdIngredientNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.IdIngredientNavigation.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.IdPositionNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.IdPositionNavigation.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-page="./Index">Вернуться</a>
+</div>

@@ -1,0 +1,39 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_menu.CreateModel
+
+@{
+    ViewData["Title"] = "Добавление";
+}
+
+<h1>Добавление</h1>
+
+<h4>Меню</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Menu.MenuView" class="control-label"></label>
+                <input asp-for="Menu.MenuView" class="form-control" />
+                <span asp-validation-for="Menu.MenuView" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.TimeOfAction" class="control-label"></label>
+                <input asp-for="Menu.TimeOfAction" class="form-control" />
+                <span asp-validation-for="Menu.TimeOfAction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Вернуться</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

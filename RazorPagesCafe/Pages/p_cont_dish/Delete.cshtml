@@ -1,0 +1,41 @@
+﻿@page
+@model RazorPagesCafe.Pages.p_cont_dish.DeleteModel
+
+@{
+    ViewData["Title"] = "Удаление";
+}
+
+<h1>Удаление</h1>
+
+<h3>Уверены, что хотите удалить содержимое блюда?</h3>
+<div>
+    <h4>Содержимое блюда</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.IdIngredientNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.IdIngredientNavigation.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ContentsOfDish.IdPositionNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ContentsOfDish.IdPositionNavigation.Description)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="ContentsOfDish.IdIngredient" />
+        <input type="hidden" asp-for="ContentsOfDish.IdPosition" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-page="./Index">Вернуться</a>
+    </form>
+</div>
