@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
@@ -21,14 +13,6 @@ namespace RazorPagesCafe.Pages.p_dishes
             _context = context;
             Configuration = configuration;
         }
-
-        //public IList<Dish> Dish { get;set; }
-
-        //[BindProperty(SupportsGet = true)]
-        //public string? SearchString { get; set; }
-        //public SelectList? Names { get; set; }
-        //[BindProperty(SupportsGet = true)]
-        //public string? DishName { get; set; }
 
         public string NameSort { get; set; }
         public string CurrentFilter { get; set; }
@@ -60,15 +44,6 @@ namespace RazorPagesCafe.Pages.p_dishes
                 dishQuery = dishQuery.Where(s => s.Name.Contains(searchString));
             }
 
-            //var dishh = from m in _context.Dishes
-            //             select m;
-
-            //if (!string.IsNullOrEmpty(DishName))
-            //{
-            //    dishh = dishh.Where(x => x.Name == DishName);
-            //}
-
-
             switch (sortOrder)
             {
                 case "name_desc":
@@ -78,8 +53,6 @@ namespace RazorPagesCafe.Pages.p_dishes
                     dishQuery = dishQuery.OrderBy(s => s.Name);
                     break;
             }
-            //Names = new SelectList(await dishQuery.Distinct().ToListAsync());
-            //Dish = await dishQuery.ToListAsync();
 
             var pageSize = Configuration.GetValue("PageSize", 4);
             Dishes = await PaginatedList<Dish>.CreateAsync(

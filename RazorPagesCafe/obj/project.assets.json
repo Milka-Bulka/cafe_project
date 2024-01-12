@@ -7932,11 +7932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\RazorPagesCafe\\RazorPagesCafe\\RazorPagesCafe.csproj",
+      "projectUniqueName": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\cafe_project\\RazorPagesCafe\\RazorPagesCafe.csproj",
       "projectName": "RazorPagesCafe",
-      "projectPath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\RazorPagesCafe\\RazorPagesCafe\\RazorPagesCafe.csproj",
+      "projectPath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\cafe_project\\RazorPagesCafe\\RazorPagesCafe.csproj",
       "packagesPath": "C:\\Users\\serge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\RazorPagesCafe\\RazorPagesCafe\\obj\\",
+      "outputPath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\cafe_project\\RazorPagesCafe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\serge\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8029,7 +8029,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

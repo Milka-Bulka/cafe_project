@@ -9,171 +9,171 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPagesCafe
 build_property.RootNamespace = RazorPagesCafe
-build_property.ProjectDir = C:\Users\serge\OneDrive\Рабочий стол\RazorPagesCafe\RazorPagesCafe\
+build_property.ProjectDir = C:\Users\serge\OneDrive\Рабочий стол\cafe_project\RazorPagesCafe\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\serge\OneDrive\Рабочий стол\RazorPagesCafe\RazorPagesCafe
+build_property.MSBuildProjectDirectory = C:\Users\serge\OneDrive\Рабочий стол\cafe_project\RazorPagesCafe
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/Error.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/Privacy.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_dish/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_dish/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X2Rpc2hcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_dish/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_dish/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X2Rpc2hcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_dish/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_dish/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X2Rpc2hcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_dish/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_dish/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X2Rpc2hcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_dish/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_dish/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X2Rpc2hcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_order/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X29yZGVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_order/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X29yZGVyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_order/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X29yZGVyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_order/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X29yZGVyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_cont_order/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_cont_order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9jb250X29yZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_dishes/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_dishes/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_dishes/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_ingredients/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_ingredients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9pbmdyZWRpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_ingredients/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_ingredients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9pbmdyZWRpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_ingredients/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_ingredients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9pbmdyZWRpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_ingredients/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_ingredients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9pbmdyZWRpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_ingredients/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_ingredients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9pbmdyZWRpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_menu/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_menu/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9tZW51XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_menu/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_menu/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9tZW51XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_menu/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_menu/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9tZW51XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_menu/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_menu/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9tZW51XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_menu/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9tZW51XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_order/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9vcmRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_order/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9vcmRlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_order/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9vcmRlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_order/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9vcmRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/p_order/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9vcmRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/visitors/Create.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/visitors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlzaXRvcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/visitors/Delete.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/visitors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlzaXRvcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/visitors/Details.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/visitors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlzaXRvcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/visitors/Edit.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/visitors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlzaXRvcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/visitors/Index.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/visitors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdmlzaXRvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/_ViewImports.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/_ViewStart.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serge/OneDrive/Рабочий стол/RazorPagesCafe/RazorPagesCafe/Pages/Shared/_Layout.cshtml]
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i0ikah9ds4

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k2pVLXpgwqTyvGzksBC5MLRbV78xfWzUe7tgvrVBZ777dXZhrjZ2fR5TrUzxRppF94ZQt54hioo0iol6/tHihg==",
+  "dgSpecHash": "rndhCtRzl0iWrPtkLtI4Dq02/omEndznUoSyPqbrxR0yHNuGh+Ajm/LZTG/LxC72Iaqk42pl+zP/O/evD2sYoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\RazorPagesCafe\\RazorPagesCafe\\RazorPagesCafe.csproj",
+  "projectFilePath": "C:\\Users\\serge\\OneDrive\\Рабочий стол\\cafe_project\\RazorPagesCafe\\RazorPagesCafe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serge\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\serge\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
@@ -19,7 +14,9 @@ namespace RazorPagesCafe.Pages.p_dishes
             _context = context;
         }
 
+        [BindProperty]
         public Dish Dish { get; set; }
+        [BindProperty]
         public ContentsOfOrder ContentsOfOrder { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
@@ -36,12 +33,13 @@ namespace RazorPagesCafe.Pages.p_dishes
                 return NotFound();
             }
             ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
+
+            ViewData["IdPosition"] = new SelectList(_context.Dishes, "IdPosition", "Name");
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            ContentsOfOrder.IdPositionNavigation = Dish;
             if (!ModelState.IsValid)
             {
                 return Page();
