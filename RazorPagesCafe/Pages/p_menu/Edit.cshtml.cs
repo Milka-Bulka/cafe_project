@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesCafe.Models;
+using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_menu
 {
     public class EditModel : PageModel
     {
-        private readonly RazorPagesCafe.Models.cafeContext _context;
+        private readonly RazorPagesCafe.CafeContext _context;
 
-        public EditModel(RazorPagesCafe.Models.cafeContext context)
+        public EditModel(RazorPagesCafe.CafeContext context)
         {
             _context = context;
         }

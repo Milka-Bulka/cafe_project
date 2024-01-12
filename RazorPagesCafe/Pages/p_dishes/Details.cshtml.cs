@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesCafe.Models;
+using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
     public class DetailsModel : PageModel
     {
-        private readonly RazorPagesCafe.Models.cafeContext _context;
+        private readonly RazorPagesCafe.CafeContext _context;
 
-        public DetailsModel(RazorPagesCafe.Models.cafeContext context)
+        public DetailsModel(RazorPagesCafe.CafeContext context)
         {
             _context = context;
         }

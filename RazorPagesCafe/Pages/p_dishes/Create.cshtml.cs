@@ -5,37 +5,49 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using RazorPagesCafe.Models;
+using Microsoft.EntityFrameworkCore;
+using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPagesCafe.Models.cafeContext _context;
+        private readonly RazorPagesCafe.CafeContext _context;
 
-        public CreateModel(RazorPagesCafe.Models.cafeContext context)
+        public CreateModel(RazorPagesCafe.CafeContext context)
         {
             _context = context;
         }
 
-        public IActionResult OnGet()
+        public Dish Dish { get; set; }
+        public ContentsOfOrder ContentsOfOrder { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
-        ViewData["MenuView"] = new SelectList(_context.Menus, "MenuView", "MenuView");
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Dish = await _context.Dishes
+                .Include(d => d.MenuViewNavigation).FirstOrDefaultAsync(m => m.IdPosition == id);
+            if (Dish == null)
+            {
+                return NotFound();
+            }
+            ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
             return Page();
         }
 
-        [BindProperty]
-        public Dish Dish { get; set; }
-
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+            ContentsOfOrder.IdPositionNavigation = Dish;
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            _context.Dishes.Add(Dish);
+            _context.ContentsOfOrders.Add(ContentsOfOrder);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

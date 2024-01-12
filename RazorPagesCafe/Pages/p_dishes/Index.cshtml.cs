@@ -7,16 +7,16 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using RazorPagesCafe.Models;
+using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPagesCafe.Models.cafeContext _context;
+        private readonly RazorPagesCafe.CafeContext _context;
         private readonly IConfiguration Configuration;
 
-        public IndexModel(RazorPagesCafe.Models.cafeContext context, IConfiguration configuration)
+        public IndexModel(RazorPagesCafe.CafeContext context, IConfiguration configuration)
         {
             _context = context;
             Configuration = configuration;

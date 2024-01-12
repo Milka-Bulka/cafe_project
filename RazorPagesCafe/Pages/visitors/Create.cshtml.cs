@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using RazorPagesCafe.Models;
+using RazorPagesCafe;
 
 namespace RazorPagesCafe.Pages.visitors
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPagesCafe.Models.cafeContext _context;
+        private readonly RazorPagesCafe.CafeContext _context;
 
-        public CreateModel(RazorPagesCafe.Models.cafeContext context)
+        public CreateModel(RazorPagesCafe.CafeContext context)
         {
             _context = context;
         }
