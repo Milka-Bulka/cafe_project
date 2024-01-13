@@ -26,7 +26,7 @@ namespace RazorPagesCafe.Pages.p_cont_order
              ViewData["IdOrder"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
                          "IdPosition", "Name");
              ViewData["IdPosition"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
-                         "IdPosition", "IdPosition");
+                         "IdPosition", " IdOrder");
             return Page();
         }
 
