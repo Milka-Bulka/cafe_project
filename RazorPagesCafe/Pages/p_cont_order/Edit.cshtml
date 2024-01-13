@@ -12,14 +12,12 @@
 <div class="row">
     <div class="col-md-4">
         <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ContentsOfOrder.IdPositionNavigation.Name" />
             <div class="form-group">
-                <label asp-for="ContentsOfOrder.IdOrder" class="control-label">Название блюда</label>
-                <select asp-for="ContentsOfOrder.IdOrder" class="form-control" asp-items="ViewBag.NameOrder"></select>
+                <label asp-for="ContentsOfOrder.IdPosition" class="control-label">Название блюда</label>
+                <select asp-for="ContentsOfOrder.IdPosition" class="form-control" asp-items="ViewBag.IdPosition"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ContentsOfOrder.IdPosition" class="control-label">id блюда</label>
+                <label asp-for="ContentsOfOrder.IdOrder" class="control-label">id блюда</label>
                 <select asp-for="ContentsOfOrder.IdOrder" class="form-control" asp-items="ViewBag.IdOrder"></select>
             </div>
             <div class="form-group">
