@@ -74,8 +74,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccF9kaXNoZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/serge/OneDrive/Рабочий стол/cafe_project/RazorPagesCafe/Pages/p_dishes/Index.cshtml]

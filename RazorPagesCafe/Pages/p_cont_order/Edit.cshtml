@@ -15,14 +15,16 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ContentsOfOrder.IdPositionNavigation.Name" />
             <div class="form-group">
-                <label asp-for="ContentsOfOrder.IdPositionNavigation" class="control-label">Название блюда</label>
-                <select asp-for="ContentsOfOrder.IdPositionNavigation" class="form-control" asp-items="ViewBag.IdPosition"></select>
-                <span asp-validation-for="ContentsOfOrder.IdPositionNavigation" class="text-danger"></span>
+                <label asp-for="ContentsOfOrder.IdOrder" class="control-label">Название блюда</label>
+                <select asp-for="ContentsOfOrder.IdPosition" class="form-control" asp-items="ViewBag.IdOrder"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContentsOfOrder.IdPosition" class="control-label">id блюда</label>
+                <select asp-for="ContentsOfOrder.IdOrder" class="form-control" asp-items="ViewBag.IdPosition"></select>
             </div>
             <div class="form-group">
                 <label asp-for="ContentsOfOrder.Comment" class="control-label"></label>
                 <input asp-for="ContentsOfOrder.Comment" class="form-control" />
-                <span asp-validation-for="ContentsOfOrder.Comment" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Сохранить" class="btn btn-primary" />

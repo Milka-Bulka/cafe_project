@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RazorPagesCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+411f7aa04b44641392f8d90de98d67755bf42763")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3107d9c66f1ab36e185fb1bf812868fbf9dd23ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("RazorPagesCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RazorPagesCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

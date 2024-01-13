@@ -1,11 +1,11 @@
 ﻿@page
-@model RazorPagesCafe.Pages.p_dishes.CreateModel
+@model RazorPagesCafe.Pages.p_dishes.EditModel
 
 @{
-    ViewData["Title"] = "Добавление";
+    ViewData["Title"] = "Редактирование";
 }
 
-<h1>Добавление</h1>
+<h1>Редактирование</h1>
 
 <h4>Блюдо</h4>
 <hr />
@@ -13,11 +13,7 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Dish.IdPosition" class="control-label"></label>
-                <input asp-for="Dish.IdPosition" class="form-control" />
-                <span asp-validation-for="Dish.IdPosition" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="Dish.IdPosition" />
             <div class="form-group">
                 <label asp-for="Dish.Name" class="control-label"></label>
                 <input asp-for="Dish.Name" class="form-control" />
@@ -36,6 +32,7 @@
             <div class="form-group">
                 <label asp-for="Dish.MenuView" class="control-label"></label>
                 <select asp-for="Dish.MenuView" class="form-control" asp-items="ViewBag.MenuView"></select>
+                <span asp-validation-for="Dish.MenuView" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Dish.Description" class="control-label"></label>
@@ -53,14 +50,14 @@
                 <span asp-validation-for="Dish.Amount" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Создать" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Вернуться</a>
+    <a asp-page="./Index">Вернуться</a>
 </div>
 
 @section Scripts {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 
 namespace RazorPagesCafe.Pages.p_dishes
 {
@@ -14,40 +14,18 @@ namespace RazorPagesCafe.Pages.p_dishes
             _context = context;
         }
 
-        [BindProperty]
-        public Dish Dish { get; set; }
-        [BindProperty]
-        public ContentsOfOrder ContentsOfOrder { get; set; }
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public IActionResult OnGet()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            Dish = await _context.Dishes
-                .Include(d => d.MenuViewNavigation).FirstOrDefaultAsync(m => m.IdPosition == id);
-            if (Dish == null)
-            {
-                return NotFound();
-            }
-            ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
-            
-            ViewData["IdPosition"] = new SelectList(_context.Dishes
-                        .Where(o => o.Name == Dish.Name).ToList(),
-                     "IdPosition", "Name");
+            ViewData["MenuView"] = new SelectList(_context.Menus, "MenuView", "MenuView");
             return Page();
         }
 
+        [BindProperty]
+        public Dish Dish { get; set; }
+
         public async Task<IActionResult> OnPostAsync()
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return Page();
-            //}
-
-            _context.ContentsOfOrders.Add(ContentsOfOrder);
+            _context.Dishes.Add(Dish);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

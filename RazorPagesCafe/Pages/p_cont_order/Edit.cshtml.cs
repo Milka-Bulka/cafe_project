@@ -19,55 +19,27 @@ namespace RazorPagesCafe.Pages.p_cont_order
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            ContentsOfOrder = await _context.ContentsOfOrders
+             ContentsOfOrder = await _context.ContentsOfOrders
                 .Include(c => c.IdOrderNavigation)
                 .Include(c => c.IdPositionNavigation).FirstOrDefaultAsync(m => m.IdOrder == id);
 
-            if (ContentsOfOrder == null)
-            {
-                return NotFound();
-            }
-           ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
-           ViewData["IdPosition"] = new SelectList(_context.Dishes, "IdPosition", "Name");
+             ViewData["IdOrder"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
+                         "IdPosition", "Name");
+             ViewData["IdPosition"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
+                         "IdPosition", "IdPosition");
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
+            await Console.Out.WriteLineAsync(ContentsOfOrder.IdOrder.ToString());
+            await Console.Out.WriteLineAsync(ContentsOfOrder.IdPosition.ToString());
+            await Console.Out.WriteLineAsync(ContentsOfOrder.Comment.ToString());
             _context.Attach(ContentsOfOrder).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ContentsOfOrderExists(ContentsOfOrder.IdOrder))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
-        }
-
-        private bool ContentsOfOrderExists(int id)
-        {
-            return _context.ContentsOfOrders.Any(e => e.IdOrder == id);
         }
     }
 }
