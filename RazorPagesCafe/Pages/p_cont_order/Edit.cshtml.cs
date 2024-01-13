@@ -23,10 +23,14 @@ namespace RazorPagesCafe.Pages.p_cont_order
                 .Include(c => c.IdOrderNavigation)
                 .Include(c => c.IdPositionNavigation).FirstOrDefaultAsync(m => m.IdOrder == id);
 
-             ViewData["IdOrder"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
-                         "IdPosition", "Name");
-             ViewData["IdPosition"] = new SelectList(_context.Dishes.Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
-                         "IdPosition", " IdOrder");
+             ViewData["NameOrder"] = new SelectList(_context.Dishes
+                           .Where(o => o.IdPosition == ContentsOfOrder.IdPosition).ToList(),
+                        "IdPosition", "Name");
+
+            int[] intArray = { (int)id };
+            IEnumerable<int> enumerable = intArray;
+
+            ViewData["IdOrder"] = new SelectList(enumerable);
             return Page();
         }
 
