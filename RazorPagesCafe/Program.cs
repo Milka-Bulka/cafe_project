@@ -9,7 +9,7 @@ namespace RazorPagesCafe
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddRazorPages();
-            builder.Services.AddDbContext<CafeContext>(options => options.UseNpgsql("Server=localhost;Database=cafe;Username=milka;Password=1234567890;Persist Security Info=True"));
+            builder.Services.AddDbContext<CafeContext>(options => options.UseNpgsql("Server=localhost;Database=cafe;Username=milka;Password=1234567890;Persist Security Info=False;Include Error Detail=True"));
 
             var app = builder.Build();
 

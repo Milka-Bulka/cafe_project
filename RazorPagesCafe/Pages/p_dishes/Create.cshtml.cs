@@ -33,17 +33,19 @@ namespace RazorPagesCafe.Pages.p_dishes
                 return NotFound();
             }
             ViewData["IdOrder"] = new SelectList(_context.Orderrs, "IdOrder", "IdOrder");
-
-            ViewData["IdPosition"] = new SelectList(_context.Dishes, "IdPosition", "Name");
+            
+            ViewData["IdPosition"] = new SelectList(_context.Dishes
+                        .Where(o => o.Name == Dish.Name).ToList(),
+                     "IdPosition", "Name");
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return Page();
+            //}
 
             _context.ContentsOfOrders.Add(ContentsOfOrder);
             await _context.SaveChangesAsync();

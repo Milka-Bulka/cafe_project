@@ -30,14 +30,14 @@ public partial class CafeContext : DbContext
     public virtual DbSet<Visitor> Visitors { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=cafe;Username=milka;Password=1234567890");
+        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=cafe;Username=milka;Password=1234567890;Persist Security Info=False;Include Error Detail=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
-            .HasPostgresEnum("place", new[] { "place" })
-            .HasPostgresEnum("status", new[] { "status" })
-            .HasPostgresEnum("stop_list", new[] { "stop_list" });
+            .HasPostgresEnum("place", new[] { "В зале", "С собой" })
+            .HasPostgresEnum("status", new[] { "Готовится", "Готово", "Ошибка" })
+            .HasPostgresEnum("stop_list", new[] { "Есть в наличии", "Нет в наличии" });
 
         modelBuilder.Entity<ContentsOfDish>(entity =>
         {
@@ -60,20 +60,22 @@ public partial class CafeContext : DbContext
 
         modelBuilder.Entity<ContentsOfOrder>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("contents_of_order");
+            entity.HasKey(e => e.IdOrder).HasName("contents_of_order_pkey");
 
+            entity.ToTable("contents_of_order");
+
+            entity.Property(e => e.IdOrder)
+                .ValueGeneratedNever()
+                .HasColumnName("id_order");
             entity.Property(e => e.Comment).HasColumnName("comment");
-            entity.Property(e => e.IdOrder).HasColumnName("id_order");
             entity.Property(e => e.IdPosition).HasColumnName("id_position");
 
-            entity.HasOne(d => d.IdOrderNavigation).WithMany()
-                .HasForeignKey(d => d.IdOrder)
+            entity.HasOne(d => d.IdOrderNavigation).WithOne(p => p.ContentsOfOrder)
+                .HasForeignKey<ContentsOfOrder>(d => d.IdOrder)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("contents_of_order_id_order_fkey");
 
-            entity.HasOne(d => d.IdPositionNavigation).WithMany()
+            entity.HasOne(d => d.IdPositionNavigation).WithMany(p => p.ContentsOfOrders)
                 .HasForeignKey(d => d.IdPosition)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("contents_of_order_id_position_fkey");
@@ -183,7 +185,7 @@ public partial class CafeContext : DbContext
                 .HasMaxLength(20)
                 .HasColumnName("name");
             entity.Property(e => e.Telephone)
-                .HasMaxLength(11)
+                .HasMaxLength(12)
                 .HasColumnName("telephone");
         });
 

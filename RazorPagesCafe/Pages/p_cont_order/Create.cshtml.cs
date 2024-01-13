@@ -25,11 +25,11 @@ namespace RazorPagesCafe.Pages.p_cont_order
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
+            //if (!ModelState.IsValid)
+            //{
+            //    return Page();
+            //}
+            await Console.Out.WriteLineAsync(ContentsOfOrder.IdPosition.ToString());
             _context.ContentsOfOrders.Add(ContentsOfOrder);
             await _context.SaveChangesAsync();
 
